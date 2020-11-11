@@ -1,0 +1,54 @@
+<div class="control">
+    <div class="mainDiv">
+        <a href="/add">New Note</a>
+    </div>
+    <div class="changePreference">
+        <a href="/?style=1">Change Theme</a>
+    </div>
+</div>
+<div class="control">
+    <div class="mainDiv">
+        <a href="/?orderBy=finishedDate">By finished Date</a>
+        <a href="/?orderBy=creationDate">By creation Date</a>
+        <a href="/?orderBy=importance">By Importance</a>
+    </div>
+    <div class="changePreference">
+        <a href="/?hideFinished=1">Hide Finished</a>
+    </div>
+</div>
+
+<div class="view">
+    {{#if notes}}
+        {{#each notes}}
+            <div class="viewEntry">
+                <form>
+                    <div class="finishedDiv">
+                        <label for="finished">
+                            <input type="checkbox" id="finished" name="finished"  disabled
+                                {{#if finished}}
+                                   checked
+                                {{/if}}
+                            >finished
+                        </label>
+                    </div>
+
+                    <div class="descriptionDiv">
+                        <div class="viewHeader">
+                            <div>{{title}}</div>
+                            <div class="importance importance_{{importance}}"></div>
+                        </div>
+                        <div>
+                            <textarea id="description" name="description" disabled>{{description}}</textarea>
+                        </div>
+                    </div>
+
+                    <div class="editDiv">
+                      <a href="/edit?id={{_id}}">Edit
+                    </div>
+                </form>
+            </div>
+        {{/each}}
+    {{else}}
+        <span>No Notes found</span>
+    {{/if}}
+</div>

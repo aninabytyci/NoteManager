@@ -1,0 +1,30 @@
+<h1>Add Note</h1>
+<div class="noteForm">
+    <form action='/' method='post'>
+        <div>
+            <label for="title">Title</label>
+            <input type="text" id="title" name="title" required>
+        </div>
+        <div>
+            <label for="description">Description</label>
+            <textarea id="description" name="description"></textarea>
+        </div>
+        <div>
+            <label for="importance">Importance</label>
+            <input type="text" id="importance" name="importance" required pattern="[1-5]">
+        </div>
+        <div>
+            <label for="finishedDate">do before</label>
+            <input type="text" id="finishedDate" name="finishedDate" placeholder="YYYY-MM-DD" required pattern="([1-9][0-9]{3})-(1[0-2]|0[1-9])-(3[01]|0[1-9]|[12][0-9])">
+        </div>
+        <div>
+            <label for="finished">finished</label>
+            <input type="checkbox" id="finished" name="finished"  value="true">
+        </div>
+        <div>
+            <input type="hidden" id="id" value="{{_id}}" >
+            <input type='submit' value='Save'>
+            <a href="/">Cancel</a>
+        </div>
+    </form>
+</div>

@@ -1,0 +1,32 @@
+{"title":"WED2 Testat",
+"description":"Create a Note Manager WebApp",
+"importance":"5",
+"createDate":{"$$date":1572860613801},
+"finishDate":"2020-11-12",
+"finished":true,
+"_id":"HFmrFcLwGAl4OLQd"}
+
+{"title":"NiSec Exercises",
+"description":"Finish NiSec Exercises",
+"rating":"3",
+"createDate":{"$$date":1583246437076},
+"finishDate":"2020-11-15",
+"finished":false,
+"_id":"NbhYIfHPwsgPaxKs"}
+
+{"title":"English Presentation",
+"description":"Finish English Presentation about optical cables",
+"rating":"4",
+"createDate":{"$$date":1572860618296},
+"finishDate":"2020-11-24",
+"finished":false,
+"_id":"i2pLKBbyZyihSuYO"}
+
+{"title":"CPI Testat",
+"description":"Finish the second project in C++",
+"rating":"4",
+"createDate":{"$$date":1572860624689},
+"finishDate":"2020-11-30",
+"finished":false,
+"_id":"sgmdraHbAxV0vp2C"}
+

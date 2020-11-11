@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Note Manager</title>
+    <link rel="stylesheet" type="text/css" href="./public/stylesheets/style.css">
+    {{#if style}}
+        <link rel="stylesheet" type="text/css" href="/stylesheets/{{style}}.css">
+    {{else}}
+        <link rel="stylesheet" type="text/css" href="./public/stylesheets/light.css">
+    {{/if}}
+</head>
+<body>
+<main>
+    {{{body}}}
+</main>
+</body>
+
+</html>
