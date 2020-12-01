@@ -19,7 +19,7 @@ class NotesController {
             notes: await noteStore.order(
                 req.userSettings.orderBy,
                 req.userSettings.orderDirection,
-                (req.userSettings.hideFinished === 1)),
+                (req.userSettings.hideFinished === 0)),
             style: req.userSettings.style
         });
     }
