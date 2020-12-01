@@ -1,0 +1,188 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 14px;
+  font-family: "Lucida Grande", "Helvetica", "Arial", sans-serif;
+}
+
+a,input[type="submit"] {
+  display: inline-block;
+  padding:10px;
+  border-radius: 5px;
+  text-decoration: none;
+  text-align: center;
+}
+
+h1{
+  margin-bottom: 20px;
+}
+
+main{
+  margin:0 auto;
+  padding: 20px;;
+  max-width: 1000px;
+}
+
+/*control*/
+.control{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.control a{
+  min-width: 100%;
+}
+
+.mainDiv{
+  width: 100%;
+}
+
+.changePreference{
+  width: 100%;
+}
+
+/*View*/
+.viewEntry{
+  margin:10px 0;
+}
+.viewEntry >form{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.finishedDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+
+.finishedDiv >label >input{
+  margin-right: 5px;
+}
+
+.descriptionDiv{
+  flex-grow: 1;
+  padding:0;
+}
+
+.descriptionDiv >div >textarea{
+  width: 100%;
+  height: 80px;
+  resize: vertical;
+}
+
+.viewHeader{
+  display: flex;
+  justify-content: space-between;
+}
+.importance{
+  font-size: 16px;
+}
+.importance_1::after{
+  content: "★";
+}
+.importance_2::after{
+  content: "★★";
+}
+.importance_3::after{
+  content: "★★★";
+}
+.importance_4::after{
+  content: "★★★★";
+}
+.importance_5::after{
+  content: "★★★★★";
+}
+
+.editDiv{
+  width: 100%;
+}
+
+.editDiv > a {
+  height: auto;
+  width: 100%;
+}
+
+/*Note Form*/
+.noteForm > form > div{
+  margin-bottom: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.noteForm > form > div:last-child{
+  justify-content: flex-end;
+}
+
+.noteForm >form > div >label{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+.noteForm >form >div >input[type="text"],
+.noteForm >form >div >textarea{
+  flex-grow: 1;
+  padding: 10px;
+}
+
+.noteForm >form >div >input[type="Date"]{
+  padding: 10px;
+  flex-grow: 1;
+}
+
+.noteForm >form >div >input[type="submit"],
+.noteForm >form >div> a{
+  width: 100%;
+}
+
+/*Media query*/
+@media(min-width:500px){
+
+  .control a{
+    min-width: 100px;
+  }
+
+  .mainDiv{
+    width: auto;
+  }
+
+  .changePreference{
+    width: auto;
+  }
+
+  .editDiv{
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .editDiv > a {
+    width: auto;
+  }
+
+  .descriptionDiv{
+    padding:0 10px;
+  }
+
+  .finishedDiv {
+    width: auto;
+  }
+
+  .noteForm >form >div >input[type="submit"],
+  .noteForm >form >div> a,
+  .noteForm >form >div >label{
+    width: 100px;
+  }
+}

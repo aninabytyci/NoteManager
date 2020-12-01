@@ -1,0 +1,13 @@
+body {
+    background-color: #999999;
+}
+
+a,input[type="submit"] {
+    background-color: white;
+    border: 1px solid #999999;
+    color: black;
+}
+
+main{
+    background-color: white;
+}
