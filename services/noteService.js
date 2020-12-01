@@ -1,16 +1,7 @@
 const Datastore = require('nedb-promises');
 const db = new Datastore({filename: './data/note.db', autoload: true});
+const Note = require('./note.js');
 
-class Note{
-    constructor(title, description, importance, finishedDate, finished){
-        this.title = title;
-        this.description = description;
-        this.importance = importance;
-        this.creationDate = new Date();
-        this.finishedDate = finishedDate;
-        this.finished = finished;
-    }
-}
 
 class NoteService{
     constructor() {

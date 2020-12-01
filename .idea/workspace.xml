@@ -2,9 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="09cf4797-0b83-4abc-9c1a-16281702746d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/services/note.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tslint.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controller/notesController.js" beforeDir="false" afterPath="$PROJECT_DIR$/controller/notesController.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/note.db" beforeDir="false" afterPath="$PROJECT_DIR$/data/note.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/middleware/userSettings.js" beforeDir="false" afterPath="$PROJECT_DIR$/middleware/userSettings.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/noteService.js" beforeDir="false" afterPath="$PROJECT_DIR$/services/noteService.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,6 +23,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
+        <option value="TypeScript File" />
         <option value="JavaScript File" />
       </list>
     </option>
@@ -37,6 +46,7 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="ts.external.directory.path" value="$PROJECT_DIR$/node_modules/typescript/lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -48,45 +58,92 @@
       <option name="presentableId" value="Default" />
       <updated>1606817464465</updated>
       <workItem from="1606817465517" duration="1121000" />
-      <workItem from="1606819043802" duration="107000" />
+      <workItem from="1606819043802" duration="1327000" />
+      <workItem from="1606825912466" duration="30000" />
+      <workItem from="1606825959352" duration="7852000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+    <option name="exactExcludedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/services/note.js" />
+      </list>
+    </option>
   </component>
   <component name="WindowStateProjectService">
     <state x="166" y="125" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1606817511345">
       <screen x="0" y="0" width="1280" height="729" />
     </state>
     <state x="166" y="125" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.729@0.0.1280.729" timestamp="1606817511345" />
-    <state width="811" height="75" key="GridCell.Tab.0.bottom" timestamp="1606819060280">
+    <state width="1011" height="141" key="GridCell.Tab.0.bottom" timestamp="1606843463938">
       <screen x="0" y="0" width="1280" height="726" />
     </state>
-    <state width="811" height="75" key="GridCell.Tab.0.bottom/0.0.1280.726@0.0.1280.726" timestamp="1606819060280" />
-    <state width="811" height="171" key="GridCell.Tab.0.bottom/0.0.1280.729@0.0.1280.729" timestamp="1606817871984" />
+    <state width="811" height="75" key="GridCell.Tab.0.bottom/0.0.1280.719@0.0.1280.719" timestamp="1606825983388" />
+    <state width="990" height="202" key="GridCell.Tab.0.bottom/0.0.1280.723@0.0.1280.723" timestamp="1606831381159" />
+    <state width="1011" height="141" key="GridCell.Tab.0.bottom/0.0.1280.726@0.0.1280.726" timestamp="1606843463938" />
+    <state width="1011" height="141" key="GridCell.Tab.0.bottom/0.0.1280.729@0.0.1280.729" timestamp="1606832612711" />
     <state width="811" height="75" key="GridCell.Tab.0.bottom/0.0.1280.731@0.0.1280.731" timestamp="1606819047629" />
     <state width="811" height="75" key="GridCell.Tab.0.bottom/0.0.1280.733@0.0.1280.733" timestamp="1606819031566" />
-    <state width="811" height="75" key="GridCell.Tab.0.center" timestamp="1606819060279">
+    <state width="1011" height="141" key="GridCell.Tab.0.center" timestamp="1606843463938">
       <screen x="0" y="0" width="1280" height="726" />
     </state>
-    <state width="811" height="75" key="GridCell.Tab.0.center/0.0.1280.726@0.0.1280.726" timestamp="1606819060279" />
-    <state width="811" height="171" key="GridCell.Tab.0.center/0.0.1280.729@0.0.1280.729" timestamp="1606817871984" />
+    <state width="811" height="75" key="GridCell.Tab.0.center/0.0.1280.719@0.0.1280.719" timestamp="1606825983387" />
+    <state width="990" height="202" key="GridCell.Tab.0.center/0.0.1280.723@0.0.1280.723" timestamp="1606831381158" />
+    <state width="1011" height="141" key="GridCell.Tab.0.center/0.0.1280.726@0.0.1280.726" timestamp="1606843463938" />
+    <state width="1011" height="141" key="GridCell.Tab.0.center/0.0.1280.729@0.0.1280.729" timestamp="1606832612711" />
     <state width="811" height="75" key="GridCell.Tab.0.center/0.0.1280.731@0.0.1280.731" timestamp="1606819047628" />
     <state width="811" height="75" key="GridCell.Tab.0.center/0.0.1280.733@0.0.1280.733" timestamp="1606819031566" />
-    <state width="811" height="75" key="GridCell.Tab.0.left" timestamp="1606819060278">
+    <state width="1011" height="141" key="GridCell.Tab.0.left" timestamp="1606843463937">
       <screen x="0" y="0" width="1280" height="726" />
     </state>
-    <state width="811" height="75" key="GridCell.Tab.0.left/0.0.1280.726@0.0.1280.726" timestamp="1606819060278" />
-    <state width="811" height="171" key="GridCell.Tab.0.left/0.0.1280.729@0.0.1280.729" timestamp="1606817871983" />
+    <state width="811" height="75" key="GridCell.Tab.0.left/0.0.1280.719@0.0.1280.719" timestamp="1606825983386" />
+    <state width="990" height="202" key="GridCell.Tab.0.left/0.0.1280.723@0.0.1280.723" timestamp="1606831381158" />
+    <state width="1011" height="141" key="GridCell.Tab.0.left/0.0.1280.726@0.0.1280.726" timestamp="1606843463937" />
+    <state width="1011" height="141" key="GridCell.Tab.0.left/0.0.1280.729@0.0.1280.729" timestamp="1606832612710" />
     <state width="811" height="75" key="GridCell.Tab.0.left/0.0.1280.731@0.0.1280.731" timestamp="1606819047627" />
     <state width="811" height="75" key="GridCell.Tab.0.left/0.0.1280.733@0.0.1280.733" timestamp="1606819031566" />
-    <state width="811" height="75" key="GridCell.Tab.0.right" timestamp="1606819060279">
+    <state width="1011" height="141" key="GridCell.Tab.0.right" timestamp="1606843463938">
       <screen x="0" y="0" width="1280" height="726" />
     </state>
-    <state width="811" height="75" key="GridCell.Tab.0.right/0.0.1280.726@0.0.1280.726" timestamp="1606819060279" />
-    <state width="811" height="171" key="GridCell.Tab.0.right/0.0.1280.729@0.0.1280.729" timestamp="1606817871984" />
+    <state width="811" height="75" key="GridCell.Tab.0.right/0.0.1280.719@0.0.1280.719" timestamp="1606825983387" />
+    <state width="990" height="202" key="GridCell.Tab.0.right/0.0.1280.723@0.0.1280.723" timestamp="1606831381159" />
+    <state width="1011" height="141" key="GridCell.Tab.0.right/0.0.1280.726@0.0.1280.726" timestamp="1606843463938" />
+    <state width="1011" height="141" key="GridCell.Tab.0.right/0.0.1280.729@0.0.1280.729" timestamp="1606832612711" />
     <state width="811" height="75" key="GridCell.Tab.0.right/0.0.1280.731@0.0.1280.731" timestamp="1606819047628" />
     <state width="811" height="75" key="GridCell.Tab.0.right/0.0.1280.733@0.0.1280.733" timestamp="1606819031566" />
+    <state x="207" y="104" width="783" height="522" key="find.popup" timestamp="1606843314600">
+      <screen x="0" y="0" width="1280" height="726" />
+    </state>
+    <state x="207" y="104" width="783" height="522" key="find.popup/0.0.1280.726@0.0.1280.726" timestamp="1606843314600" />
+    <state x="345" y="122" key="refactoring.ChangeSignatureDialog" timestamp="1606832517164">
+      <screen x="0" y="0" width="1280" height="726" />
+    </state>
+    <state x="345" y="122" key="refactoring.ChangeSignatureDialog/0.0.1280.726@0.0.1280.726" timestamp="1606832517164" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/middleware/userSettings.js</url>
+          <line>5</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/middleware/userSettings.js</url>
+          <line>11</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/middleware/userSettings.js</url>
+          <line>1</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

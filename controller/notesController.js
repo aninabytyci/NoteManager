@@ -8,7 +8,7 @@ class NotesController {
             req.body.description,
             req.body.importance,
             req.body.finishedDate,
-            (req.body.finished === 'true'));
+            (req.body.finished === "true"));
         res.redirect('/');
     }
 
@@ -19,9 +19,10 @@ class NotesController {
             notes: await noteStore.order(
                 req.userSettings.orderBy,
                 req.userSettings.orderDirection,
-                (req.userSettings.hideFinished === 0)),
+                (req.userSettings.hideFinished === 1)),
             style: req.userSettings.style
         });
+       // res.redirect('/');
     }
 
     async editNote(req, res) {
@@ -55,18 +56,5 @@ class NotesController {
                 style: req.userSettings.style
             }));
     }
-
-    /* async viewFinishedNote(req, res) {
-         await res.render('viewNote',
-           Object.assign(await noteStore.getAll(req.query.finished === 1),
-             {
-                 layout: 'index',
-                 orderDirection: req.userSettings.orderDirection,
-                 orderBy: req.userSettings.orderBy,
-                 style: req.userSettings.style
-             }))
-     //  res.redirect("/");*/
-
-
 }
 module.exports = new NotesController();
